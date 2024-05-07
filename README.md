@@ -1,2 +1,3 @@
 # NSS-website-01
-this is the base file for nss website
+🔷🔷🔷This website is the potential draft for NSS website 
+conbtributors : Utkarsh Dubey, Anshuman Raj
