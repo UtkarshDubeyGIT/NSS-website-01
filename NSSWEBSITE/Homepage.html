@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NSS website</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/589ca3ab0c.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="IMAGES/NSSLOGO.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <section class="header">
+    <nav>
+        <a href="index.html"><img src="IMAGES/NSSLOGO.png"></a>
+        <a href="nsut.ac.in"><img src="IMAGES/logo_nsut_0_0_0_1.png"></a>
+        <p class="logo-name">National Service Scheme <br>
+          NSUT
+        </p>
+        <div class="nav-links" id="navlinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+          <li><a class="active" href="">HOME</a></li>
+          <li><a href="" class="nav-btn">ABOUT</a></li>
+          <li><a href="" class="nav-btn">GALLERY</a></li>
+          <li><a href="" class="nav-btn">DASHBOARD</a></li>
+          <li><a href="" class="nav-btn">LOGIN</a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+      <h1>A non profit organisation......</h1>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique illum vel voluptas temporibus repudiandae fugiat quidem, earum nesciunt ex a sapiente odio magni, voluptates rem quaerat aliquid quis tempora beatae.
+      </p>
+      <a href="" class ="hero-button"> VISIT US TO KNOW MORE</a>
+    </div>
+  </section>
+
+  <section class="course">
+    <h1>Courses Offered</h1>
+    <p>Lus dolor perferendis, tempora nisi eos aut repudiandae quam adipisci exercitationem vitae doloribus voluptas.</p>
+    <div class="row">
+      <div class="course-col">
+        <h3>intermediate</h3>
+        <p>Lorem ipsum dolor sit amet consectetulit, nulla esse saepe totam mollitia nemo!</p></div>
+        <div class="course-col"><h3>Degree</h3>
+        <p>Lorem ipsum dolor sit amet consectetulit, nulla esse saepe totam mollitia nemo!</p></div>
+        <div class="course-col"><h3>Post-Graduatation</h3>
+        <p>Lorem ipsum dolor sit amet consectetulit, nulla esse saepe totam mollitia nemo!</p></div>
+    </div>
+
+  </section>
+<!------------------------------ javascript for menu toggling --------------------->
+
+
+  <script >
+    var navlinks = document.getElementById("navlinks");
+    function showMenu(){
+      navlinks.style.right = "0";
+    }
+    function hideMenu(){
+      navlinks.style.right = "-200px";
+    }
+  </script>
+</body>
+
+</html>
