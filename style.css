@@ -298,6 +298,9 @@ h3{
   padding: 5px;
   margin-right: 30px;
 }
+.footer-map-link{
+  text-decoration: none;
+}
 .fa-facebook:hover{
   color: #1877F2;
 }
@@ -311,7 +314,10 @@ h3{
   color: #ff0000;
 }
 .fa-square-x-twitter{
-  color: rgba(0, 0, 0, 0.853);
+  color: black;
+}
+.fa-square-x-twitter:hover{
+  color: #1DA1F2;
 }
 .hr-footer-copyright{
   width: 90%;
@@ -321,6 +327,173 @@ h3{
 }
 .copyright-footer{
   text-align: center;
+}
+.testimonials-main-page{
+  padding:40px;
+  margin:0;
+  position: sticky;
+  box-sizing: border-box;
+  font-family:'Montserrat',sans-serif; 
+  min-height:100vh;
+  text-align: center;
+}
+.testimonials-main-page-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay{
+  position: absolute;
+  left:0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #e5989b;
+  border-radius: 25px 25px 0 25px;
+  -webkit-border-radius: 25px 25px 0 25px;
+  -moz-border-radius: 25px 25px 0 25px;
+  -ms-border-radius: 25px 25px 0 25px;
+  -o-border-radius: 25px 25px 0 25px;
+}
+.overlay::before,.overlay::after{
+  content:'';
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  right: 0;
+  bottom: -40px;
+  background-color:#e5989b;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  -webkit-border-radius: 0 25px 0 0;
+  -moz-border-radius: 0 25px 0 0;
+  -ms-border-radius: 0 25px 0 0;
+  -o-border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.card-image{
+  position:relative;
+  height:150px;
+  width: 150px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding:3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 4px solid #e5989b;
+}
+.testimonials-main-page .card{
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  background-color: #fff;
+}
+.card-content .name{
+  font-size: 18px;
+  font-weight: 500;
+  font-weight: 500px;
+  color: #333;
+}
+.card-content .description{
+  padding:2px;
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+  border-radius: 25px 25px 0 25px;
+  -webkit-border-radius: 25px 25px 0 25px;
+  -moz-border-radius: 25px 25px 0 25px;
+  -ms-border-radius: 25px 25px 0 25px;
+  -o-border-radius: 25px 25px 0 25px;
+}
+.card .button{
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #e5989b;
+  border-radius: 6px;
+  margin: 14px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.card .button:hover{
+  background: #f67e7d;
+
+}
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+
+  padding: 40px 0;
+}
+.slide-content{
+  padding: 45px 20px;
+  margin: 0px 40px;
+
+  overflow: hidden;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.image-content,.card-content{
+  display: flex;
+  flex-direction: column;
+  padding:10px 14px;
+  align-items: center;
+}
+.swiper-navBtn{
+  color: #6e93f7;
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 40px;
+}
+.swiper-button-next{
+  right:0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination.bullet{
+  background-color: #6e93f7;
+  opacity:1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #4070f4;
 }
 @media(max-width:700px){
   .text-box h1{
@@ -359,5 +532,13 @@ h3{
 @media(max-width: 700px){
   .row{
     flex-direction: column;
+  }
+}
+@media screen and (max-width:768 px){
+  .slide-content{
+    margin: 0 10px
+  }
+  .swiper-navBtn{
+    display: none;
   }
 }
